@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Through API</title>
+</head>
+<body>
+    <div id="container">
+        
+    </div>
+    <script>
+        const container = document.querySelector('#container')
+        const request = new XMLHttpRequest();
+        request.open('GET', "https://restcountries.com/v3.1/name/nepal")
+        request.send();
+        request.addEventListener('load', function() {
+            const [data] = JSON.parse(this.responseText)
+            console.log(data.flag)
+            const htmlcode = `
+            <div id="card">
+                <article id="card-body">
+                    <div class="card-body">
+                        <img src="https://flagcdn.com/w320/np.png" alt="Flag" class="card-body-img"/>
+                        <h2 class="card-body-title">
+                            ${data.name.common}
+                        </h2>
+                        <p class="card-body-capital">
+                            ${data.capital}
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-footer-social">   
+                            <h3>${data.languages.nep}</h3>
+                            <p>Native languages</p>
+                        </div>
+                        <div class="card-footer-social">   
+                            <h3>${data.population}</h3>
+                            <p>Population</p>
+                        </div>
+                        <div class="card-footer-social">   
+                            <h3>${data.fifa}</h3>
+                            <p>Demonyms</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            `
+            container.insertAdjacentHTML('afterbegin',htmlcode)
+        })
+    </script>
+</body>
+</html>
