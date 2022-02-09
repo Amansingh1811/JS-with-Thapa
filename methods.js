@@ -77,3 +77,17 @@
 //     return operator(num1, num2)
 // }
 // console.log(calculator(3,5,mul));
+
+
+// Promise basically consume by the Fetch process and hardly its created. 
+// Promise is basically a (then or catch) 
+
+// const setHeader = {
+//     headers:{
+//         Accept:"application/json"
+//     }
+// }
+
+// fetch('https://icanhazdadjoke.com/',setHeader)
+// .then((res) => console.log(res.json()))
+// .catch((error) => console.log(error))
