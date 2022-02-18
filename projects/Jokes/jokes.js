@@ -1,6 +1,5 @@
 const jokes = document.querySelector('#jokes')
 const jokesBtn = document.querySelector('#jokesBtn')
- 
 const generatejokes = async () =>{
     try{
         const setHeader ={
