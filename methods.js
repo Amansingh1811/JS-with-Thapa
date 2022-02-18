@@ -90,4 +90,19 @@
 
 // fetch('https://icanhazdadjoke.com/',setHeader)
 // .then((res) => console.log(res.json()))
-// .catch((error) => console.log(error))
+// .catch((error) => console.log(error)
+
+// add async in funtion to fetch the api
+
+// try{
+//     setHeader = {
+//         headers:{
+//             Accept : "application/json"
+//         }
+//     }
+// const res = await fetch('https://icanhazdadjoke.com/',setHeader)
+// const data = res.json()
+// jokes.innerHTML = data.joke;
+// }catch(err){
+//     console.log(` its shows an error ${err}`);
+// }
