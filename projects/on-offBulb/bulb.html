@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Off Bulb</title>
+</head>
+<body>
+    <div class="main-heading">
+        <h3>Can you turn light On/off</h3>
+        <button id="lightON">Turn on the light</button>
+        <img src="img/OFFbulb.png" alt= "lightOffPic" id= "ligthON">
+        <button id="lightOFF">Turn off the light</button>
+    </div>
+    <script>
+        const On = document.querySelector('#lightON')
+        const Off = document.querySelector('#lightOFF')
+        On.innerHTML.src ="img/ONbulb.png"
+        Off.innerHTML.src = "img/OFFbulb.png"
+    </script>
+</body>
+</html>
