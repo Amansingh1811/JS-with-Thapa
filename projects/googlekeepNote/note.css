@@ -159,8 +159,7 @@ box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1),
     padding: 20px;
 }
 
-.fa-edit,
-.fa-trash-alt {
+.fa-edit, .fa-trash-alt {
     color: #fff;
     padding: 10px;
     background-color: #2ecc71;
