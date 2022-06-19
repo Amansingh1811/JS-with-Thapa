@@ -81,3 +81,16 @@ document.getElementById('next').addEventListener('click', ()=>{
     masterPlay.classList.remove("fa-play")
     masterPlay.classList.add("fa-pause")
 })
+document.getElementById('previous').addEventListener('click', ()=>{
+    if(firstSong<=0){
+        firstSong = 0;
+    }
+    else{
+        firstSong -= 1;
+    }
+    audioSong.src = `songs/${firstSong+1}.mp3`
+    audioSong.currentTime = 0;
+    audioSong.play();
+    masterPlay.classList.remove("fa-play")
+    masterPlay.classList.add("fa-pause")
+})
