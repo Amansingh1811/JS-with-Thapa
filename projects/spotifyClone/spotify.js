@@ -78,6 +78,4 @@ document.getElementById('next').addEventListener('click', ()=>{
     audioSong.src = `songs/${firstSong+1}.mp3`;
     audioSong.currentTime = 0;
     audioSong.play();
-    masterPlay.classList.remove("fa-play");
-    masterPlay.classList.add("fa-pause");
 })
