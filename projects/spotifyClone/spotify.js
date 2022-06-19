@@ -75,9 +75,9 @@ document.getElementById('next').addEventListener('click', ()=>{
     else{
         firstSong += 1;
     }
-    audioSong.src = `songs/${firstSong+1}.mp3`
+    audioSong.src = `songs/${firstSong+1}.mp3`;
     audioSong.currentTime = 0;
     audioSong.play();
-    masterPlay.classList.remove("fa-play")
-    masterPlay.classList.add("fa-pause")
+    masterPlay.classList.remove("fa-play");
+    masterPlay.classList.add("fa-pause");
 })
